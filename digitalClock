@@ -1,0 +1,12 @@
+#! /usr/bin/bash
+
+trap "echo clock closed" 2
+green=$'\e[1;32m'
+black=$'\e[1;40m'
+while (( 1 )) 
+do
+    clear
+    # echo $(date +%T) #to run the command in terminal
+    echo $green $(date +%T) $black
+    sleep 1
+done
